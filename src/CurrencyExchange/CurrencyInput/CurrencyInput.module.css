@@ -1,0 +1,66 @@
+.CurrencyInputContainer {
+  display: flex;
+  flex-flow: column;
+  justify-content: space-between;
+}
+
+.CurrencyInput {
+    margin-bottom: 1rem;
+    border-radius: 50px;
+    background-color: rgba(240, 248, 255, .4);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: 0px 2px 5px 0px rgba(40,40,40,1);
+
+}
+
+.CurrencyInput input, .CurrencyInput select {
+    background-color: transparent;
+    border: none;
+    font-size: 1.5rem;
+    color: rgba(240, 248, 255, .8);
+    padding: 2rem;
+}
+
+@media screen and (max-width: 576px) {
+  .CurrencyInput input, .CurrencyInput select {
+    font-size: 1rem;
+}
+}
+
+@media screen and (max-width: 360px) {
+  .CurrencyInput input, .CurrencyInput select {
+    font-size: .85rem;
+}
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
+.CurrencyInput select {
+    -moz-appearance:none;
+    -webkit-appearance:none;
+    appearance:none;
+    position: relative;
+}
+
+
+.CurrencyInput input:focus, .CurrencyInput select:focus {
+    outline: none;
+}
+
+.AccountBalance {
+  font-size: .85rem;
+  text-align: right;
+  margin-right: 1.5rem;
+  color: rgba(240, 248, 255, .8);
+  margin-bottom: 1rem;
+}
